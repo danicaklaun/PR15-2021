@@ -1,0 +1,12 @@
+STA 117
+TCP 51067
+
+
+DO_REG  1 3600   0  0      1     0  DO  @FirstPowerSwitch 2
+DO_REG  1 3601   0  0      1     0  DO  @SecondPowerSwitch 2
+DI_REG  3 3000  0  0      1     0  DI  @USB1 2
+DI_REG  1 3003  0  0      1     0  DI  @Socket 2
+DI_REG  1 3001  0  0      1     0  DI  @USB2 2
+DI_REG  1 3002  0  0      1     0  DI  @USB3 2
+DI_REG  1 3004  0  0      1     0  DI  @USBC 2
+HR_INT  1 4400  0  0      1     0  AO  @Capacity 4
